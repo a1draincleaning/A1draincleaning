@@ -1,5 +1,3 @@
-css/style.css
-
 * {
   box-sizing: border-box;
 }
@@ -133,6 +131,53 @@ nav a:hover {
 
 .post-body {
   width: 100%;
+}
+
+/* NEW — HEADING STYLES */
+.post-body h1 {
+  font-family: "Bree Serif", serif;
+  color: #1A1A68;
+  font-size: 48px;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.post-body h2 {
+  font-family: "Bree Serif", serif;
+  color: #1A1A68;
+  font-size: 36px;
+  margin-top: 45px;
+  border-bottom: 3px solid #ff0000;
+  padding-bottom: 8px;
+}
+
+.post-body p,
+.post-body li {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* NEW — SERVICE GRID */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h3 {
+  color: #1A1A68;
+  font-family: "Bree Serif", serif;
+  margin-top: 0;
 }
 
 /* CALL BUTTON */
@@ -317,4 +362,18 @@ footer p {
   .sticky-call-bar a {
     font-size: 26px;
   }
-        }
+
+  /* NEW — MOBILE HEADING ADJUSTMENTS */
+  .post-body h1 {
+    font-size: 32px;
+  }
+
+  .post-body h2 {
+    font-size: 28px;
+  }
+
+  .post-body p,
+  .post-body li {
+    font-size: 18px;
+  }
+}
